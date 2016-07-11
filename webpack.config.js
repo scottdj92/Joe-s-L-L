@@ -19,10 +19,12 @@ var config = {
     plugins: [
         new ExtractTextPlugin("bundle.css")
     ],
-    resolve: {
-        modulesDirectories: ['node_modules'],
-        extensions: ['', '.css', '.js', '.jsx']
-    },
+    resolve: [
+        {
+            modulesDirectories: ['node_modules'],
+            extensions: ['', '.css', '.js', '.jsx', '.json']
+        }
+    ],
     module: {
         loaders: [
             {
@@ -43,6 +45,10 @@ var config = {
                 test: /\.(jpg|png|svg)$/,
                 exclude: [/node_modules/],
                 loader: "file-loader?name=assets/[name].[ext]"
+            },
+            {
+                test: /\.json$/,
+                loader: "json-loader"
             }
         ]
     }
