@@ -1,7 +1,7 @@
 require('file-loader?name=[name].[ext]!../index.html');
 
 //import data
-import items from './items.json';
+import Items from './items.json';
 
 import React from 'react';
 import {render} from 'react-dom';
@@ -15,19 +15,16 @@ import BlogItem from './modules/BlogItem/BlogItem.jsx';
 class App extends React.Component {
     constructor(props) {
         super(props);
-        this.data = {};
-    }
-
-    componentDidMount() {
-        this.data = items;
-        //console.log(items);
+        this.state = {data: Items};
     }
 
     render() {
         return(
-            <div id='app' className='main'>
-                {this.data.map}
-                <BlogItem/>
+            <div className='main'>
+                {/*console.log('APP', this.state)*/}
+                {this.state.data.map(function(result) {
+                    return <BlogItem key={result.id} data={result.data}/>
+                })}
             </div>
         );
     }
