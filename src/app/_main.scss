@@ -1,3 +1,21 @@
-#app {
-    
+//import all variables
+@import '_variables.scss';
+
+//import CSS framework
+@import "~bulma/bulma";
+
+//import module scss
+@import "modules/BlogItem/_BlogItem.scss";
+
+//main app scss
+.main {
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 3em;
+
+    padding: 1%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(106, 104, 105);
+    border-radius: 5px;
 }

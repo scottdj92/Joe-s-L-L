@@ -1,0 +1,18 @@
+.blog-item {
+    &__title {
+        margin-bottom: 0.5rem;
+        &:after {
+            content: ">";
+        }
+    }
+
+    &__location-team {
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        color: $gray;
+    }
+
+    &__desc {
+
+    }
+}
