@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-var BUILD_DIR = path.resolve(__dirname, 'dist');
+var BUILD_DIR = path.resolve(__dirname, 'dist/');
 var APP_DIR = path.resolve(__dirname, 'src/app');
 var ASSET_DIR = path.resolve(__dirname, 'src/assets');
 
@@ -49,6 +49,10 @@ var config = {
             {
                 test: /\.json$/,
                 loader: "json-loader"
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2|otf|ttc)$/,
+                loader: "url-loader?name=assets/typefaces/[name]-[hash].[ext]"
             }
         ]
     }

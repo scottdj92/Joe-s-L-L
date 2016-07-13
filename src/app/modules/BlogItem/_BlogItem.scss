@@ -1,4 +1,8 @@
+@import "./typefaces/Avenir/_avenir.scss";
+
 .blog-item {
+    font-family: 'Avenir', serif;
+
     &__title {
         margin-bottom: 0.5rem;
         &:after {
