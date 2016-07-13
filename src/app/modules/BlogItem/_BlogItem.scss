@@ -1,9 +1,10 @@
-@import "./typefaces/Avenir/_avenir.scss";
+@import "./typefaces/FidelitySans/_fidelity-sans.scss";
+@import "./typefaces/Roboto/_roboto.scss";
 
 .blog-item {
-    font-family: 'Avenir', serif;
 
     &__title {
+        font-family: "Fidelity Sans Bold", sans-serif;
         margin-bottom: 0.5rem;
         &:after {
             content: ">";
@@ -11,12 +12,13 @@
     }
 
     &__location-team {
+        font-family: "Roboto", sans-serif;
         margin-bottom: 1rem;
         text-transform: uppercase;
         color: $gray;
     }
 
     &__desc {
-
+        font-family: "Roboto", sans-serif;
     }
 }

@@ -51,8 +51,21 @@ var config = {
                 loader: "json-loader"
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2|otf|ttc)$/,
-                loader: "url-loader?name=assets/typefaces/[name]-[hash].[ext]"
+                test: /\.ttf$|\.eot$/,
+                loader: 'file-loader',
+                query: {
+                    name: 'assets/typefaces/[name].[ext]'
+                },
+                include: './src/vendor/typefaces/'
+            },
+            {
+                test: /\.(woff|woff2|otf|ttc)$/,
+                loader: "url-loader",
+                query: {
+                    name: "name=assets/typefaces/[name].[ext]",
+                    limit: '65000',
+                },
+                include: './src/vendor/typefaces/'
             }
         ]
     }
