@@ -3,6 +3,10 @@ require('file-loader?name=[name].[ext]!../index.html');
 //import data
 import Items from './items.json';
 
+//import typefaces
+require('./typefaces/FidelitySans/_fidelity-sans.scss');
+require('./typefaces/Roboto/_roboto.scss');
+
 import React from 'react';
 import {render} from 'react-dom';
 

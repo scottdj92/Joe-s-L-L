@@ -33,13 +33,13 @@ var config = {
                 loaders: ['babel']
             },
             {
-                test: /\.css$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
-            },
-            {
                 test: /\.scss$/,
                 exclude: [/node_modules/],
                 loader: ExtractTextPlugin.extract('css!sass')
+            },
+            {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
             },
             {
                 test: /\.(jpg|png|svg)$/,
@@ -52,20 +52,17 @@ var config = {
             },
             {
                 test: /\.ttf$|\.eot$/,
-                loader: 'file-loader',
+                loader: 'url',
                 query: {
                     name: 'assets/typefaces/[name].[ext]'
-                },
-                include: './src/vendor/typefaces/'
+                }
             },
             {
                 test: /\.(woff|woff2|otf|ttc)$/,
-                loader: "url-loader",
+                loader: "url",
                 query: {
-                    name: "name=assets/typefaces/[name].[ext]",
-                    limit: '65000',
-                },
-                include: './src/vendor/typefaces/'
+                    name: "assets/typefaces/[name].[ext]"
+                }
             }
         ]
     }

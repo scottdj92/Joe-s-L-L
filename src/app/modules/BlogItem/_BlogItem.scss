@@ -1,10 +1,10 @@
-@import "./typefaces/FidelitySans/_fidelity-sans.scss";
-@import "./typefaces/Roboto/_roboto.scss";
+// @import "./typefaces/FidelitySans/_fidelity-sans.scss";
+// @import "./typefaces/Roboto/_roboto.scss";
 
 .blog-item {
 
     &__title {
-        font-family: "Fidelity Sans Bold", sans-serif;
+        font-family: Fidelity Sans Bold, sans-serif;
         margin-bottom: 0.5rem;
         &:after {
             content: ">";

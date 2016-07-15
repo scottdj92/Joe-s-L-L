@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-require("../../typefaces/FidelitySans/_fidelity-sans.scss");
+//require("../../typefaces/FidelitySans/_fidelity-sans.scss");
 
 class BlogItem extends React.Component{
     constructor(props) {
