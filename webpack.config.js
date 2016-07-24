@@ -4,7 +4,6 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var BUILD_DIR = path.resolve(__dirname, 'dist/');
 var APP_DIR = path.resolve(__dirname, 'src/app');
-var ASSET_DIR = path.resolve(__dirname, 'src/assets');
 
 var config = {
     context: __dirname + '/src',
@@ -13,7 +12,7 @@ var config = {
     },
     output: {
         path: BUILD_DIR,
-        publicPath: '/dist',
+        publicPath: 'dist/',
         filename: 'bundle.js'
     },
     plugins: [
@@ -33,13 +32,28 @@ var config = {
                 loaders: ['babel']
             },
             {
-                test: /\.scss$/,
-                exclude: [/node_modules/],
-                loader: ExtractTextPlugin.extract('css!sass')
+                test: /\.(ttf|eot)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'url-loader',
+                query: {
+                    limit: "65000",
+                    name: 'assets/typefaces/[name].[ext]'
+                }
             },
             {
-                test: /\.css$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+                test: /\.otf?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: "url-loader",
+                query: {
+                    limit: "65000",
+                    name: "assets/typefaces/[name].[ext]"
+                }
+            },
+            {
+                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'url-loader',
+                query: {
+                    limit: "65000",
+                    name: "assets/typefaces/[name].[ext]"
+                }
             },
             {
                 test: /\.(jpg|png|svg)$/,
@@ -51,18 +65,13 @@ var config = {
                 loader: "json-loader"
             },
             {
-                test: /\.ttf$|\.eot$/,
-                loader: 'url',
-                query: {
-                    name: 'assets/typefaces/[name].[ext]'
-                }
+                test: /\.scss$/,
+                exclude: [/node_modules/],
+                loader: ExtractTextPlugin.extract('css!sass')
             },
             {
-                test: /\.(woff|woff2|otf|ttc)$/,
-                loader: "url",
-                query: {
-                    name: "assets/typefaces/[name].[ext]"
-                }
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
             }
         ]
     }

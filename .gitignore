@@ -1,5 +1,6 @@
 /node_modules
-/src/vendor/icons
-/src/vendor/typefaces
+/src/vendor
 
 /dist/*
+
+npm-debug.log

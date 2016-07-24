@@ -1,16 +1,23 @@
 @font-face {
     font-family: Fidelity Sans, sans-serif;
-    src: url('/src/vendor/typefaces/Fidelity Final Font/Web/FidelitySans-Regular_WEB.otf');
-    src: url('/src/vendor/typefaces/Fidelity Final Font/Web/FidelitySans-Regular_WEB.otf') format('otf'),
-        url('/src/vendor/typefaces/Fidelity Final Font/Web/FidelitySans-Regular_WEB.eot') format('eot'),
-        url('/src/vendor/typefaces/Fidelity Final Font/Web/FidelitySans-Regular_WEB.tf') format('ttf');
     font-weight: normal;
     font-style: normal;
+    src:url("./FidelitySans-Regular_WEB.otf") format('otf'),
+        url("./FidelitySans-Regular_WEB.eot") format('eot'),
+        url("./FidelitySans-Regular_WEB.ttf") format('ttf'),
+        url("./FidelitySans-Regular_WEB.woff") format('woff'),
+        url("./FidelitySans-Regular_WEB.woff2") format('woff2'),
+        url("./FidelitySans-Regular_WEB.svg") format('svg');
 }
 
 @font-face {
     font-family: Fidelity Sans Bold, sans-serif;
-    src: url('/src/vendor/typefaces/Fidelity Final Font/Web/FidelitySans-Bold.otf');
     font-weight: bold;
     font-style: normal;
+    src: url("./FidelitySans-Bold_WEB.otf"),
+    url("./FidelitySans-Bold_WEB.eot") format('eot'),
+    url("./FidelitySans-Bold_WEB.ttf") format('ttf'),
+    url("./FidelitySans-Bold_WEB.woff") format('woff'),
+    url("./FidelitySans-Bold_WEB.woff2") format('woff2'),
+    url("./FidelitySans-Bold_WEB.svg") format('svg');;
 }
