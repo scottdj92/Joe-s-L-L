@@ -6,9 +6,15 @@
     &__title {
         font-family: "Fidelity Sans Bold", sans-serif;
         margin-bottom: 0.5rem;
-        &:after {
-            content: ">";
+        .title-arrow {
+            width: 2%;
+            position: relative;
+            top: 0.3em;
         }
+    }
+    
+    &__image {
+        width: 66%;
     }
 
     &__location-team {

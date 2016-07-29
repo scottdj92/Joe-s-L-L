@@ -7,6 +7,11 @@ import Items from './items.json';
 require('./typefaces/FidelitySans/_fidelity-sans.scss');
 require('./typefaces/Roboto/_roboto.scss');
 
+require('../../src/vendor/custom/book-find.svg');
+require('../../src/vendor/custom/design-coffee.svg');
+require('../../src/vendor/custom/file-edit.svg');
+require('../../src/vendor/custom/arrow.svg');
+
 import React from 'react';
 import {render} from 'react-dom';
 

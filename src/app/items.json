@@ -5,7 +5,7 @@
             "title": "Senior Experience Designer",
             "location": "Boston",
             "team": "Product team",
-            "iconSrc": "",
+            "iconSrc": "design-coffee.svg",
             "description": "You will strategize and develop creative concepts; define best practices for navigation, organization, and interaction design; and apply user-centered design methods to translate user needs, business objectives, and technology capabilities into world-class user experiences."
         }
     },
@@ -15,7 +15,7 @@
             "title": "Strategy Director",
             "location": "San Francisco",
             "team": "Research team",
-            "iconSrc": "",
+            "iconSrc": "book-find.svg",
             "description": "You will work to identify gaps and frame new opportunities, looking across consumer, brand, market, competitive, and channel dimensions. You will ensure straegic focus throughout the planning and execution of the solution and plan and optimize marketing efforts around goals."
         }
     },
@@ -25,7 +25,7 @@
             "title": "Interactive Developer",
             "location": "Boston",
             "team": "Technology team",
-            "iconSrc": "",
+            "iconSrc": "file-edit.svg",
             "description": "You can quickly turn visual design and wireframes into functional pages as well as contribute to idea generation and development. Qualified applicants must be self-motivated, detail-oriented, results-driven, have good interpersonal skills, and work well within team environments."
         }
     },
@@ -35,7 +35,7 @@
             "title": "Data Scientist",
             "location": "Dublin",
             "team": "Research team",
-            "iconSrc": "",
+            "iconSrc": "book-find.svg",
             "description": "The role is to not only be a trusted advisor to our clients for driving the next generation innovation in applied machine learning and statiscal analysis but also a change agent in advancing the group's capabilities into the future."
         }
     }
