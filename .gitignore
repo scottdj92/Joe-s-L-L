@@ -1,5 +1,6 @@
 /node_modules
-/src/vendor
+/src/vendor/icons
+/src/vendor/typefaces
 
 /dist/*
 
